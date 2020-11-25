@@ -34,9 +34,8 @@ def toQwFile(file):
                         data +=c
                 with open("{}_ToAzerty.txt".format(filename),"w") as wr_file:
                     wr_file.write(data)
-                    
-        print(pathfile)
-        print("ok")
+                    name = os.path.basename(wr_file.name)
+        print("The file was saved at {} directory with {} filename.".format(os.getcwd(),name))
     else:
         print("The file doesn't exist in {} directory.".format(os.getcwd()))
 
